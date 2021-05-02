@@ -162,7 +162,7 @@ public class Send_MoneyActivity extends AppCompatActivity {
 
     public void senddenyNotification(String token) {
         //System.out.println(token);
-        Model model = new Model(token, new NotificationModel("계좌이체 거절", myname + "이 계좌이체를 거절하였습니다", "MainActivity", "transfer"));
+        Model model = new Model(token, new NotificationModel("계좌이체 거절", myname + "이 계좌이체를 거절하였습니다", "HomeActivity", "transfer"));
         Api apiService = ApiClient.getClient().create(Api.class);
         retrofit2.Call<ResponseBody> responseBodyCall = apiService.sendNotification(model);
 
