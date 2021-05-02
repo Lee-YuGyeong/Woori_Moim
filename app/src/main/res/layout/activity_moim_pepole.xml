@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Moim_pepole">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="모임 구성원을 선택해 주세요."
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/imageView3"
+            android:layout_width="66dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/black_text_background"
+            android:gravity="center"
+            android:text="선택된 모임원"
+            android:textColor="#FFFFFF"
+            android:textSize="9dp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="5dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="309dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="250dp"
+            android:background="#C9C9C9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="아이디검색"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/editText_id"
+            app:layout_constraintStart_toStartOf="@+id/imageView4" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/moim_name_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <EditText
+            android:id="@+id/editText_id"
+            android:layout_width="309dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="32dp"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="23dp"
+            android:layout_height="21dp"
+            android:layout_marginRight="19dp"
+            android:background="@drawable/search_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="66dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/black_text_background"
+            android:gravity="center"
+            android:text="검색된 아이디"
+            android:textColor="#FFFFFF"
+            android:textSize="9dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/editText_id" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:divider="#FFFFFF"
+            android:dividerHeight="0px"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"></ListView>
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="352dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/next_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

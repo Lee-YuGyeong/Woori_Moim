@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintVertical_weight="1"
+        android:fillViewport="true"
+        tools:context=".HomeDetail">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TextView
+                android:id="@+id/textView_moim_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모임명"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/black_text_background"
+                android:gravity="center"
+                android:text="모임원"
+                android:textColor="#FFFFFF"
+                android:textSize="9dp"
+                app:layout_constraintStart_toStartOf="@+id/textView_moim_name"
+                app:layout_constraintTop_toBottomOf="@+id/textView_moim_name" />
+
+
+            <ListView
+                android:id="@+id/nameList"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:divider="#FFFFFF"
+                android:dividerHeight="0px"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textView13"
+                app:layout_constraintTop_toTopOf="@+id/textView13"/>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/payment_list_icon"
+                app:layout_constraintEnd_toStartOf="@+id/btn2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameList" />
+
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/analysis_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameList" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/good_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn2"
+                app:layout_constraintTop_toBottomOf="@+id/nameList" />
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="#C9C9C9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="등록된 계좌"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line" />
+
+            <Button
+                android:id="@+id/button_account_plus"
+                android:layout_width="45dp"
+                android:layout_height="15dp"
+                android:background="@drawable/black_text_background"
+                android:text="계좌 추가"
+                android:textColor="#FFFFFF"
+                android:textSize="9dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.541"
+                app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="은행사"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView_bank_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000-xxxx-0000"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_bank"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView_bank" />
+
+            <TextView
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="#C9C9C9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_bank_num" />
+
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="등록된 카드"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+
+            <TextView
+                android:id="@+id/textView_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ㅇㅇㅇ님의 카드"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <Button
+                android:id="@+id/button_card_plus"
+                android:layout_width="45dp"
+                android:layout_height="15dp"
+                android:background="@drawable/black_text_background"
+                android:text="카드 추가"
+                android:textColor="#FFFFFF"
+                android:textSize="9dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_card"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView_card" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="@drawable/card_empty_box"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/recyclerView" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/plus"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                app:layout_constraintStart_toStartOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_card" />
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:background="@drawable/pay_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                android:layout_marginTop="10dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

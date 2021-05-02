@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="wrap_content"
+    android:layout_height="250dp"
+    android:elevation="30dp"
+    card_view:cardBackgroundColor="#F6F6F6"
+    card_view:cardCornerRadius="40dp"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="27dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/pin_icon" />
+
+            <TextView
+                android:id="@+id/textView_moim_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="모임명"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:background="@drawable/black_text_background"
+                android:gravity="center"
+                android:text="모임원"
+                android:textColor="#FFFFFF"
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/nameList"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="43dp"
+            android:layout_marginHorizontal="15dp">
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginHorizontal="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/payment_list_icon" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/analysis_icon" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/good_icon" />
+
+            <Button
+                android:id="@+id/button_pay"
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_marginHorizontal="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/payment_icon" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

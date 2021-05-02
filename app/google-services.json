@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "888698427751",
+    "project_id": "woori-moim",
+    "storage_bucket": "woori-moim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888698427751:android:38eb8f1ce5ab2626ef77c2",
+        "android_client_info": {
+          "package_name": "com.woori.moim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888698427751-5tumt7bincbipf3osds5sq9thn3v4j29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbFSyuv9PnTx89p_Jw0VIlN-HwyRP4Hnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888698427751-5tumt7bincbipf3osds5sq9thn3v4j29.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

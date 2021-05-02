@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/request_moim"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="땡땡님이\n(모임명) 결제 요청하였어요."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:text="내야할 금액"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="총금액"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="@drawable/bottom_stroke"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="결제에 참여하는 모임원"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="bottom"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/moim_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="'수락'을 누르면 편리하게 이체 페이지로 넘어갈 수 있어요."
+        android:textSize="10sp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <ImageView
+            android:id="@+id/deny"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/accept"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+
+</LinearLayout>

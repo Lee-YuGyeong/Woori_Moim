@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoimFinish">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/member_check" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:text="모임 개설이\n 완료되었어요."
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="모임 개설일"
+        app:layout_constraintBottom_toTopOf="@+id/text_moim_name"
+        app:layout_constraintStart_toStartOf="@+id/text_moim_name" />
+
+    <TextView
+        android:id="@+id/text_moim_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="모임명"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="23dp"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="321dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="150dp"
+        android:background="#C9C9C9"
+        android:text="TextView"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="39dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="17dp"
+        android:textColor="#FFFFFF"
+        android:textSize="9dp"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        android:gravity="center"/>
+<!--        android:background="@drawable/black_text_background"-->
+<!--        android:text="모임원"-->
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:dividerHeight="0px"
+        android:divider="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="지금 바로 편리한 모임 결제를 시작할 수 있어요!"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        android:textSize="13dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="321dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/next_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

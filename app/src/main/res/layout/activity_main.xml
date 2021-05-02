@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계좌 버튼" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="모임 버튼" />
+
+    <EditText
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="카드인식" />
+
+    <EditText
+        android:id="@+id/editText_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="암호화할 텍스트를 입력하세요." />
+
+
+    <Button
+        android:id="@+id/button_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="암호화,복호화" />
+
+    <TextView
+        android:id="@+id/textView_en"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="암호화" />
+
+    <TextView
+        android:id="@+id/textView_de"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="복호화" />
+
+    <Button
+        android:id="@+id/button_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="splash" />
+
+</LinearLayout>
