@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.woori.moim.Network.Api;
@@ -24,7 +25,7 @@ import okhttp3.ResponseBody;
 import retrofit2.Callback;
 
 public class Payment_CompleteActivity extends AppCompatActivity {
-    ImageView sendpush_btn;
+    ImageView sendpush_btn, ok;
     float total;
     float divide;
     ArrayList<String> name, id, token;
@@ -46,6 +47,9 @@ public class Payment_CompleteActivity extends AppCompatActivity {
     }
     public void setting_view(){
         sendpush_btn=findViewById(R.id.sendpush_btn);
+        ok=findViewById(R.id.ok);
+        Glide.with(this).load(R.drawable.member_check).into(ok);
+        Glide.with(this).load(R.drawable.pay_complete).into(sendpush_btn);
 
         context=this;
         myaddress="1234 5789 1234 5612";
