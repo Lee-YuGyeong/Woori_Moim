@@ -52,8 +52,8 @@ public class AccntActivity extends BaseActivity implements MainActivityView {
 //                editor.putString("accnt", "10026288*****");
 //                editor.commit();
 
-                Intent intent = new Intent(getApplicationContext(), HomeDetail.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getApplicationContext(), HomeDetail.class);
+//                startActivity(intent);
                 finish();
             }
         });

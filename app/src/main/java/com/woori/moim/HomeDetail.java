@@ -54,6 +54,15 @@ public class HomeDetail extends AppCompatActivity {
 
     ArrayList<CardSelectItem> list2 = new ArrayList<CardSelectItem>();
 
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        SharedPreferences sharedPreferences = getSharedPreferences("mine", MODE_PRIVATE);
+        String accnt = sharedPreferences.getString("accnt", "0000-000-000000");
+        textView_bank_num.setText(accnt);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -131,7 +140,7 @@ public class HomeDetail extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ApiActivity.class);
                 startActivity(intent);
-                finish();
+             //   finish();
             }
         });
 
