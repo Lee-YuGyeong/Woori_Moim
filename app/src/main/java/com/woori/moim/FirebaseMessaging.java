@@ -47,7 +47,7 @@ public class FirebaseMessaging extends FirebaseMessagingService {
                 String id = remoteMessage.getData().get("id");
                 String moim_name = remoteMessage.getData().get("moim_name");
                 sendTransferNotification(title, body, clickAction,name, id, moim_name);
-            }else if(clickAction.equals("MainActivity")){
+            }else if(clickAction.equals("HomeActivity")){
                 String test=remoteMessage.getData().get("test");
                 if(test.equals("transfer")){
                     sendNotification(title, body, clickAction, test);
@@ -58,7 +58,7 @@ public class FirebaseMessaging extends FirebaseMessagingService {
         } else if (remoteMessage.getNotification() != null) {
             String title = remoteMessage.getNotification().getTitle();
             String body = remoteMessage.getNotification().getBody();
-            sendNotification(title, body, "MainActivity", "nothing");
+            sendNotification(title, body, "HomeActivity", "nothing");
         }
     }
 
@@ -72,7 +72,7 @@ public class FirebaseMessaging extends FirebaseMessagingService {
             intent.putExtra("test", test);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         } else {
-            intent = new Intent(this, MainActivity.class);
+            intent = new Intent(this, HomeActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         }
 
