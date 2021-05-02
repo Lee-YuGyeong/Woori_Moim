@@ -59,7 +59,9 @@ public class CardPassword extends AppCompatActivity {
         pw = intent.getStringExtra("pw");
         account = intent.getStringExtra("account");
 
-        Button button = findViewById(R.id.button);
+        Glide.with(getApplicationContext()).load(R.drawable.next_btn).into(imageView11);
+
+        ImageView button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

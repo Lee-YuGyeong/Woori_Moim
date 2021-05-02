@@ -159,12 +159,11 @@
 
             </androidx.recyclerview.widget.RecyclerView>
 
-            <Button
+            <ImageView
                 android:id="@+id/button_add"
                 android:layout_width="350dp"
                 android:layout_height="51dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/moim_add_btn" />
+                android:layout_marginTop="15dp" />
 
 
         </LinearLayout>

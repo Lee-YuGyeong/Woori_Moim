@@ -239,11 +239,10 @@
         android:maxLength="4"/>
 
 
-    <TextView
+    <ImageView
         android:id="@+id/textView7"
         android:layout_width="342dp"
         android:layout_height="129dp"
-        android:background="@drawable/gray_box"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -333,7 +332,7 @@
         app:layout_constraintStart_toStartOf="@+id/textView12"
         app:layout_constraintTop_toTopOf="@+id/textView11" />
 
-    <Button
+    <ImageView
         android:id="@+id/button_chk"
         android:layout_width="16dp"
         android:layout_height="16dp"
@@ -350,12 +349,11 @@
         app:layout_constraintEnd_toEndOf="@+id/button_chk"
         app:layout_constraintTop_toTopOf="@+id/button_chk" />
 
-    <Button
+    <ImageView
         android:id="@+id/btn_finish"
         android:layout_width="352dp"
         android:layout_height="61dp"
         android:layout_marginTop="28dp"
-        android:background="@drawable/btn_finish"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"

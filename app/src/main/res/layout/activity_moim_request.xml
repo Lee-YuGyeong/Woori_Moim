@@ -121,19 +121,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <Button
+        <ImageView
             android:id="@+id/button_no"
             android:layout_width="120dp"
-            android:layout_height="43dp"
-            android:layout_marginRight="15dp"
-            android:background="@drawable/no_btn" />
+            android:layout_height="28dp"
+            android:layout_marginRight="15dp" />
 
-        <Button
+        <ImageView
             android:id="@+id/button_yes"
             android:layout_width="120dp"
             android:layout_height="43dp"
-            android:layout_marginLeft="15dp"
-            android:background="@drawable/yes_btn" />
+            android:layout_marginLeft="15dp" />
 
     </LinearLayout>
 

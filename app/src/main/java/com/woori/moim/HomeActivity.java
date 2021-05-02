@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,7 +42,7 @@ public class HomeActivity extends AppCompatActivity {
 
     TextView textView2, textView1, textView_moim_name;
 
-    Button button_add, button_pay;
+    ImageView button_add, button_pay;
     String name, id;
 
 
@@ -80,7 +81,7 @@ public class HomeActivity extends AppCompatActivity {
         textView1 = findViewById(R.id.textView1);
         textView_moim_name = findViewById(R.id.textView_moim_name);
         button_add = findViewById(R.id.button_add);
-        button_pay = findViewById(R.id.button_pay);
+        //button_pay = findViewById(R.id.button_pay);
         ConstraintLayout layout = (ConstraintLayout) findViewById(R.id.layout);
 
         nameList = findViewById(R.id.nameList);
@@ -95,6 +96,7 @@ public class HomeActivity extends AppCompatActivity {
         RecyclerRightDecoration spaceDecoration = new RecyclerRightDecoration(30);
         recyclerView.addItemDecoration(spaceDecoration);
 
+        Glide.with(getApplicationContext()).load(R.drawable.moim_add_btn).into(button_add);
 
         moimAdapter.setOnItemClickListener(new MoimAdapter.OnItemClickListener() {
             @Override

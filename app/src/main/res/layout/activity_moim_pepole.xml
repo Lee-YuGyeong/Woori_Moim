@@ -74,7 +74,6 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="40dp"
-            android:background="@drawable/moim_name_input"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -91,12 +90,11 @@
             app:layout_constraintStart_toStartOf="@+id/imageView4"
             app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
-        <Button
+        <ImageView
             android:id="@+id/button_search"
             android:layout_width="23dp"
             android:layout_height="21dp"
             android:layout_marginRight="19dp"
-            android:background="@drawable/search_icon"
             app:layout_constraintBottom_toBottomOf="@+id/imageView4"
             app:layout_constraintEnd_toEndOf="@+id/imageView4"
             app:layout_constraintTop_toTopOf="@+id/imageView4" />
@@ -124,12 +122,11 @@
             app:layout_constraintStart_toStartOf="@+id/textView5"
             app:layout_constraintTop_toBottomOf="@+id/textView5"></ListView>
 
-        <Button
+        <ImageView
             android:id="@+id/button_next"
             android:layout_width="352dp"
             android:layout_height="61dp"
             android:layout_marginTop="110dp"
-            android:background="@drawable/next_btn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView4" />

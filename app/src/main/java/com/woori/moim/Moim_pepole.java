@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,9 +16,11 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
@@ -46,7 +49,7 @@ public class Moim_pepole extends AppCompatActivity {
     ListView listView;
 
     EditText editText_id;
-    Button button_search;
+    ImageView button_search;
 
     String moim_name;
 
@@ -121,7 +124,8 @@ public class Moim_pepole extends AppCompatActivity {
             }
         });
 
-        Button button_next = findViewById(R.id.button_next);
+        ImageView button_next = findViewById(R.id.button_next);
+        Glide.with(getApplicationContext()).load(R.drawable.next_btn).into(button_next);
         button_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -137,7 +141,9 @@ public class Moim_pepole extends AppCompatActivity {
             }
         });
 
-
+        ImageView imageView4 = findViewById(R.id.imageView4);
+        Glide.with(getApplicationContext()).load(R.drawable.moim_name_input).into(imageView4);
+        Glide.with(getApplicationContext()).load(R.drawable.search_icon).into(button_search);
     }
 
     public void getFirebase(String strID) {

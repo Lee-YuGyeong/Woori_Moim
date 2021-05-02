@@ -13,8 +13,7 @@
         android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/member_check" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -100,12 +99,11 @@
         app:layout_constraintStart_toStartOf="@+id/button"
         android:textSize="13dp"/>
 
-    <Button
+    <ImageView
         android:id="@+id/button"
         android:layout_width="321dp"
         android:layout_height="61dp"
         android:layout_marginBottom="80dp"
-        android:background="@drawable/next_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

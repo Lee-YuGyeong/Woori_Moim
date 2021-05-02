@@ -11,9 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
@@ -35,8 +37,8 @@ public class MoimRequest extends AppCompatActivity {
     TextView textView_moim_name;
     TextView textView_user_name;
     TextView textView_user_id;
-    Button button_yes;
-    Button button_no;
+    ImageView button_yes;
+    ImageView button_no;
     PeopleListAdapter peopleListAdapter;
     ListView listView;
     ArrayList<PeopleItem> list = new ArrayList<PeopleItem>();
@@ -72,6 +74,8 @@ public class MoimRequest extends AppCompatActivity {
         textView_user_id = findViewById(R.id.textView_user_id);
         button_yes = findViewById(R.id.button_yes);
         button_no = findViewById(R.id.button_no);
+        Glide.with(getApplicationContext()).load(R.drawable.yes_btn).into(button_yes);
+        Glide.with(getApplicationContext()).load(R.drawable.no_btn).into(button_no);
 
         textView_title.setText(user_name + "님이\n" + moim_name + " 가입을 요청하였어요.");
         textView_moim_name.setText(moim_name);

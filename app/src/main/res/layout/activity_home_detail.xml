@@ -63,40 +63,37 @@
                 app:layout_constraintStart_toEndOf="@+id/textView13"
                 app:layout_constraintTop_toTopOf="@+id/textView13"/>
 
-            <Button
+            <ImageView
                 android:id="@+id/btn1"
                 android:layout_width="30dp"
                 android:layout_height="45dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/payment_list_icon"
                 app:layout_constraintEnd_toStartOf="@+id/btn2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/nameList" />
 
 
-            <Button
+            <ImageView
                 android:id="@+id/btn2"
                 android:layout_width="30dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/analysis_icon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/nameList" />
 
-            <Button
+            <ImageView
                 android:id="@+id/btn3"
                 android:layout_width="30dp"
                 android:layout_height="45dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/good_icon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/btn2"
                 app:layout_constraintTop_toBottomOf="@+id/nameList" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/line"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -224,11 +221,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView_card" />
 
-            <Button
+            <ImageView
                 android:id="@+id/btn_pay"
                 android:layout_width="320dp"
                 android:layout_height="60dp"
-                android:background="@drawable/pay_btn"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView3"

@@ -4,15 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -77,7 +80,8 @@ public class MoimFinish extends AppCompatActivity {
         text_moim_name.setText(moim_name);
 
 
-        Button button = findViewById(R.id.button);
+        ImageView button = findViewById(R.id.button);
+        Glide.with(getApplicationContext()).load(R.drawable.next_btn).into(button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,6 +92,8 @@ public class MoimFinish extends AppCompatActivity {
                 finish();
             }
         });
+        ImageView imageView = findViewById(R.id.imageView);
+        Glide.with(getApplicationContext()).load(R.drawable.member_check).into(imageView);
 
         DatabaseReference databaseReference;
         databaseReference = FirebaseDatabase.getInstance().getReference("moim/" + moim_name + "/user");
@@ -114,6 +120,8 @@ public class MoimFinish extends AppCompatActivity {
         }
 
         peopleListAdapter.notifyDataSetChanged();
+
+
 
     }
 

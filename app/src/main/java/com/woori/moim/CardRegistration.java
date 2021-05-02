@@ -31,7 +31,7 @@ import javax.crypto.spec.SecretKeySpec;
 public class CardRegistration extends AppCompatActivity {
 
     EditText text_cardNum1, text_cardNum2, text_cardNum3,text_cardNum4, text_date1, text_date2, text_cvc, text_pw;
-    Button button_chk, btn_finish;
+    ImageView button_chk, btn_finish;
 
     String cardNum, date, cvc, pw;
     boolean chk=false;
@@ -71,6 +71,8 @@ public class CardRegistration extends AppCompatActivity {
         button_chk = findViewById(R.id.button_chk);
         button_chk_img = findViewById(R.id.imageView10);
         btn_finish = findViewById(R.id.btn_finish);
+        ImageView textView7 = findViewById(R.id.textView7);
+
 
         TextView textView12 = findViewById(R.id.textView12);
         TextView textView13 = findViewById(R.id.textView13);
@@ -79,6 +81,10 @@ public class CardRegistration extends AppCompatActivity {
         textView13.setPaintFlags(textView13.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         textView14.setPaintFlags(textView14.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
+        Glide.with(getApplicationContext()).load(R.drawable.gray_box).into(textView7);
+
+        Glide.with(getApplicationContext()).load(R.drawable.member_check).into(button_chk);
+        Glide.with(getApplicationContext()).load(R.drawable.btn_finish).into(btn_finish);
         Glide.with(getApplicationContext()).load(R.drawable.member_uncheck).into(button_chk_img);
         button_chk.setOnClickListener(new View.OnClickListener() {
             @Override

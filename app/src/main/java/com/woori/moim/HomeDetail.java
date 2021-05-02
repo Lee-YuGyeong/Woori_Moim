@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -36,7 +37,8 @@ public class HomeDetail extends AppCompatActivity {
 
     TextView textView_moim_name, textView_bank, textView_bank_num, textView_card;
     ListView listView;
-    Button btn1, btn2, btn3, button_card_plus, btn_pay, btn_accnt;
+    ImageView btn1, btn2, btn3,btn_pay;
+    Button button_card_plus, btn_accnt;
     RecyclerView recyclerView;
 
     String moim_name, name, id;
@@ -89,6 +91,11 @@ public class HomeDetail extends AppCompatActivity {
         id = intent.getStringExtra("id");
         textView_moim_name.setText(moim_name);
         textView_card.setText(name + "님의 카드");
+
+        Glide.with(getApplicationContext()).load(R.drawable.payment_list_icon).into(btn1);
+        Glide.with(getApplicationContext()).load(R.drawable.analysis_icon).into(btn2);
+        Glide.with(getApplicationContext()).load(R.drawable.good_icon).into(btn3);
+        Glide.with(getApplicationContext()).load(R.drawable.pay_btn).into(btn_pay);
 
         //String accnt = intent.getStringExtra("accnt");
         SharedPreferences sharedPreferences = getSharedPreferences("mine", MODE_PRIVATE);
