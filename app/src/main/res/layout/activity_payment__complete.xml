@@ -8,12 +8,15 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
+
     <ImageView
         android:id="@+id/ok"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:scaleType="fitXY"/>
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/member_check"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
